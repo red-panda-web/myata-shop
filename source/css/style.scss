@@ -1,0 +1,154 @@
+@import "_nullstyle.scss";
+@import "_adaptive.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+//// header ////
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header__body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	max-width: 250px;
+	height: auto;
+}
+
+.header__block1 {
+	width: 400px;
+}
+
+.header__contacts {
+	display: flex;
+	justify-content: center;
+}
+
+.phone {
+	display: inline-block;
+	background: url("../../img/icons/phone.png") 0 50% no-repeat;
+	padding: 0 0 0 20px;
+	a{
+		color: #34495e;
+		font-size: 16px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		//line-height: 53px;
+		span{
+			font-weight: 400;
+		}
+	}	
+}
+
+.phone + .phone{
+	margin-left: 30px;
+}
+
+.header__search {
+	form{
+		width: 100%;
+		position: relative;
+	}
+	input, button{
+		border: none;
+		outline: none;
+		height: 40px;
+		background-color: #ecf0f1;
+	}
+	button{
+		width: 16px;
+		height: 17px;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		background: url("../../img/icons/magnifying_glass_unactive.png") 0 0 no-repeat;
+		&:hover{
+			background: url("../../img/icons/magnifying_glass_active.png") 0 0 no-repeat;
+		}
+	}
+	input{
+		width: 100%;
+		padding: 14px 40px 14px 20px;
+		border-radius: 5px;
+		color: #34495e;
+		font-size: 14px;
+		&::-webkit-input-placeholder {color: #bdc3c7;}
+		&::-moz-placeholder          {color: #bdc3c7;}
+		&:-moz-placeholder           {color: #bdc3c7;}
+		&:-ms-input-placeholder      {color: #bdc3c7;}
+	}
+}
+
+.header__block2 {
+	width: 262px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header__authorization {
+	display: flex;
+	justify-content: center;
+}
+
+.logIn, .reg {
+	color: #95a5a6;
+	font-size: 16px;
+
+	cursor: pointer;
+}
+
+.logIn{
+	background: url("../../img/icons/key.svg") 0 0 no-repeat;
+	border-right: 1px solid#ecf0f1;
+	padding: 0 9px 0 20px;
+}
+
+.reg {
+	background: url("../../img/icons/round_lock.png") 10px 0 no-repeat;
+	padding: 0 9px 0 30px;
+}
+
+.header__cart {
+	display: flex;
+	justify-content: space-around;
+	background-color: #ecf0f1;
+	border-radius: 4px;
+	padding: 11px 0;
+}
+
+.header__cart-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+	background-color: #ffffff;
+}
+
+.header__cart-info {
+}
+
+.info {
+	color: #34495e;
+	font-size: 16px;
+	span{
+		color: #2ecc71;
+	}
+}
+
+.info + .info{
+	margin-top: 9px;
+}
