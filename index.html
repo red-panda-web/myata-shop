@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Интернет-магазин МЯТА</title>
 </head>
@@ -38,8 +39,8 @@
 							<img src="img/icons/shop_icon.png" alt="Cart">
 						</div>
 						<div class="header__cart-info">
-							<div class="info"><span>Товаров: </span>25 шт.</div>
-							<div class="info"><span>На сумму: </span>3 750 грн.</div>
+							<div class="info"><span>Товаров:&ensp;</span><span id="items-count">25</span> шт.</div>
+							<div class="info"><span>На сумму:&ensp;</span><span id="amount_purchase">3 750</span> грн.</div>
 						</div>
 					</div>
 				</div>
@@ -47,6 +48,55 @@
 		</div>
 	</header>
 
+	<main>
+		<nav class="menu-top">
+			<div class="container">
+				<ul>
+					<li><a href="#!">Главная</a></li>
+					<li><a href="#!">О нас</a></li>
+					<li><a href="#!">Доставка</a></li>
+					<li><a href="#!">Как сделать заказ</a></li>
+					<li><a href="#!">Возврат товара</a></li>
+					<li><a href="#!">Сотрудничество</a></li>
+					<li><a href="#!">Акции</a></li>
+					<li><a href="#!">Новости</a></li>
+					<li><a href="#!">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="under-header">
+			<div class="container">
+				<div class="under-header__body">
+					<div class="catalog">
+						<div class="catalog__title">Каталог</div>
+						<div class="catalog__menu">
+							<ul class="catalog__items-lvl1">
+								<li><a href="#!">Формы для выпечки</a></li>
+								<li><a href="#!">Кондитерский инвентарь</a></li>
+								<li><a href="#!">Кондитерские ингредиенты</a></li>
+								<li><a href="#!">Оборудование</a></li>
+								<li><a href="#!">Всё для кухни</a></li>
+								<li><a href="#!">Фототорт.<br>Печать на пищевой бумаге</a>
+									<ul class="catalog__items-lvl2">
+										<li><a href="#!">Индивидуальные картинки</a></li>
+										<li><a href="#!">Картинки с деньгами</a></li>
+										<li><a href="#!">Прочие картинки</a></li>
+										<li><a href="#!">Пищевые картинки из разных мультиков</a></li>
+										<li><a href="#!">Индивидуальные картинки</a></li>
+										<li><a href="#!">Картинки с деньгами</a></li>
+										<li><a href="#!">Прочие картинки</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="script.js"></script>
 </body>
 

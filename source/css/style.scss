@@ -17,11 +17,16 @@ body{
 .header__body {
 	display: flex;
 	justify-content: space-between;
+	padding: 20px 0 26px 0;
 }
 
 .header__logo {
 	max-width: 250px;
-	height: auto;
+	padding: 10px 0 0 0;
+	img{
+		width: 100%;
+		height: auto;
+	}
 }
 
 .header__block1 {
@@ -31,6 +36,8 @@ body{
 .header__contacts {
 	display: flex;
 	justify-content: center;
+	padding: 17px 0 0 0;
+	margin-bottom: 33px;
 }
 
 .phone {
@@ -43,7 +50,6 @@ body{
 		font-weight: 700;
 		font-style: normal;
 		letter-spacing: normal;
-		//line-height: 53px;
 		span{
 			font-weight: 400;
 		}
@@ -51,7 +57,7 @@ body{
 }
 
 .phone + .phone{
-	margin-left: 30px;
+	margin-left: 28px;
 }
 
 .header__search {
@@ -69,8 +75,8 @@ body{
 		width: 16px;
 		height: 17px;
 		position: absolute;
-		right: 10px;
-		bottom: 10px;
+		right: 20px;
+		bottom: 12px;
 		background: url("../../img/icons/magnifying_glass_unactive.png") 0 0 no-repeat;
 		&:hover{
 			background: url("../../img/icons/magnifying_glass_active.png") 0 0 no-repeat;
@@ -98,24 +104,32 @@ body{
 .header__authorization {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 19px;
 }
 
 .logIn, .reg {
 	color: #95a5a6;
 	font-size: 16px;
-
 	cursor: pointer;
 }
 
 .logIn{
-	background: url("../../img/icons/key.svg") 0 0 no-repeat;
+	background: url("../../img/icons/key.png") 10px 0 no-repeat;
 	border-right: 1px solid#ecf0f1;
-	padding: 0 9px 0 20px;
+	padding: 0 9px 0 30px;
+	&:hover{
+		color: #34495e;
+		background: url("../../img/icons/key_hover.png") 10px 0 no-repeat;
+	}
 }
 
 .reg {
-	background: url("../../img/icons/round_lock.png") 10px 0 no-repeat;
-	padding: 0 9px 0 30px;
+	background: url("../../img/icons/lock.png") 10px 0 no-repeat;
+	padding: 0 9px 0 25px;
+	&:hover{
+		color: #34495e;
+		background: url("../../img/icons/lock_hover.png") 10px 0 no-repeat;
+	}
 }
 
 .header__cart {
@@ -136,19 +150,124 @@ body{
 	border-radius: 50%;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 	background-color: #ffffff;
+	margin-left: 10px;
 }
 
 .header__cart-info {
+	padding: 5px 7px 0 0;
 }
 
 .info {
 	color: #34495e;
 	font-size: 16px;
-	span{
+	span:first-child{
 		color: #2ecc71;
 	}
 }
 
 .info + .info{
-	margin-top: 9px;
+	margin-top: 7px;
+}
+
+//// Menu ////
+
+.menu-top{
+	background-color: #34495e;
+	padding: 25px 0 24px 0;
+	ul{
+		display: flex;
+		justify-content: space-between;
+	}
+	li{
+		background: url("../../img/icons/leaves.png") 0 0 no-repeat;
+		padding: 0 0 0 30px;
+		&:first-child{
+			background: none;
+			padding: 0;
+		}	
+	}
+	a{
+		color: #ffffff;
+		text-transform: uppercase;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		&:hover{
+			color: #2ecc71;
+		}
+	}
+}
+
+
+//// under-header section ////
+
+.under-header {
+	height: 561px;
+	background: url("../../img/first_sec_bg_green.png") 0 0 no-repeat, url("../../img/first_sec_bg.png") 0 0/cover no-repeat;
+}
+
+.under-header__body {
+	display: flex;
+	padding: 30px 0;
+}
+.catalog {
+	width: 263px;
+}
+.catalog__title {
+	padding: 16px 0 24px 59px;
+	color: #ffffff;
+	background-color: #2ecc71;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	border-radius: 5px 5px 0 0;
+	&::before{
+		content: "";
+		display: inline-block;
+		width: 21px;
+		height: 24px;
+		background: url("../../img/icons/leaves_big.png") 0 0 no-repeat;
+		margin-right: 7px;
+	}
+}
+.catalog__menu {
+}
+.catalog__items-lvl1 {
+	background-color: #ecf0f1;
+	border-radius: 0 0 5px 5px;
+	li{
+		padding: 23px 0 0 29px;
+		position: relative;
+		&:after{
+			content: "";
+			display: block;
+			width: 88.6%;
+			border: 1px solid #2ecc71;
+			margin-top: 27px;
+		}
+	}
+	a{
+		color: #34495e;
+		font-size: 16px;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 1.375;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 5px;
+			height: 5px;
+			background-color: #2ecc71;
+			border-radius: 50%;
+			margin-right: 10px;
+			position: absolute;
+			top: 45%;
+			left: 15px;
+		}
+	}
+}
+.catalog__items-lvl2 {
+	display: none;
 }
