@@ -210,9 +210,11 @@ body{
 	display: flex;
 	padding: 30px 0;
 }
+
 .catalog {
 	width: 263px;
 }
+
 .catalog__title {
 	padding: 16px 0 24px 59px;
 	color: #ffffff;
@@ -232,28 +234,14 @@ body{
 		margin-right: 7px;
 	}
 }
-.catalog__menu {
-}
-.catalog__items-lvl1 {
+
+.catalog__menu-lvl1 {
 	background-color: #ecf0f1;
 	border-radius: 0 0 5px 5px;
+	display: flex;
+	flex-direction: column;
 	li{
-		padding: 23px 0 0 29px;
 		position: relative;
-		&:after{
-			content: "";
-			display: block;
-			width: 88.6%;
-			border: 1px solid #2ecc71;
-			margin-top: 27px;
-		}
-	}
-	a{
-		color: #34495e;
-		font-size: 16px;
-		font-style: normal;
-		letter-spacing: normal;
-		line-height: 1.375;
 		&:before{
 			content: "";
 			display: inline-block;
@@ -261,13 +249,137 @@ body{
 			height: 5px;
 			background-color: #2ecc71;
 			border-radius: 50%;
-			margin-right: 10px;
 			position: absolute;
 			top: 45%;
 			left: 15px;
 		}
+		&:after{
+			content: "";
+			position: absolute;
+			display: block;
+			width: 88%;
+			border-bottom: 1px solid #2ecc71;
+			left: 6%;
+			top: 100%;
+		}
+		&:last-child {
+			border-radius: 0 0 5px 5px;
+			&::after{
+				display: none;
+			}
+		}
+		&:hover{
+			background-color: #34495e;
+			a{
+				color: #ffffff;
+			}		
+		}
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		padding: 21px 10px 26px 29px;
+		color: #34495e;
+		font-size: 16px;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 1.375;
 	}
 }
-.catalog__items-lvl2 {
-	display: none;
+.catalog__menu-lvl1 li:last-child:hover .catalog__menu-lvl2{
+	visibility: visible;
+	opacity: 1;
+}
+.catalog__menu-lvl2 {
+	position: absolute;
+	right: -100%;
+	top: 0;
+	transition: all 0.3s ease-in;
+	background-color: #2ecc71;
+	max-width: 263px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 11;
+	li{
+		&::before{
+			background-color: #fff;
+		}
+		&:after{
+			border-bottom: 1px solid #fff;
+		}
+		&:hover{
+			background-color: #27ae60;
+		}
+		a{
+			color: #fff;
+		}
+	}
+}
+
+.under-header__slider{
+	width: 847px;
+	margin-left: 30px;
+}
+.under-header__slide {
+	width: 100%;
+	background: url("../../img/cakes.png") 0 0 no-repeat;
+}
+.under-header__pagination{
+	bottom: 20px !important;
+}
+.under-header__slider .swiper-pagination-bullet{
+	width: 11px;
+	height: 11px;
+	border: 1px solid #ffffff;
+	background: none;	
+}
+.under-header__slider .swiper-pagination-bullet-active{
+	background-color: #ffffff;
+}
+
+.promo{
+	padding: 30px 29px 0 0;
+	position: relative;
+}
+
+.title {
+	color: #34495e;
+	font-size: 44px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 53px;
+	text-transform: uppercase;
+}
+
+.promo__title{
+	text-align: right;
+	margin-bottom: 9px;
+}
+.promo__description {
+	color: #34495e;
+	font-size: 30px;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 22px;
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: -0.3px;
+}
+.promo__btn {
+	display: inline-block;
+	background-color: #34495e;
+	padding: 15px 45px;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	position: absolute;
+	right: 29px;
+	margin-top: 38px;
 }
