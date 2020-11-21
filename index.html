@@ -145,86 +145,231 @@
 			<div class="container">
 				<div class="deals__body">
 					<div class="tabs">
-						<div class="arrow"></div>
+						<div class="arrow-left"></div>
 						<div class="tabs__body">
-							<div class="tabs__item active" data-tab="1">Хиты продаж</div>
-							<div class="tabs__item" data-tab="2">Акции</div>
-							<div class="tabs__item" data-tab="3">Новинки</div>
+							<div class="tabs__item js-trigger active" data-tab="1">Хиты продаж</div>
+							<div class="tabs__item js-trigger" data-tab="2">Акции</div>
+							<div class="tabs__item js-trigger" data-tab="3">Новинки</div>
 						</div>
-						<div class="arrow arrow-right"></div>
+						<div class="arrow-right"></div>
 					</div>
 
-					<div class="hits-row" data-tab="1">
-						<!-- Item -->
-						<div class="row__item">
-							<div class="row__img">
-								<img src="img/item1.png" alt="Item 1">
-								<div class="bage__in-stock">В наличии</div>
-								<div class="bage__hit">Хит</div>
+					<div class="hits row-items js-tabContent active" data-tab="1">
+						<div class="row-items__body">
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item1.png" alt="Item 1">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Набор силиконовых порционных форм Корзиночка-Квадрат, 10 шт.</div>
+								<div class="row__price">
+									<span class="price__old"></span>
+									<span class="price__actual">55 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
 							</div>
-							<div class="row__name">Набор силиконовых порционных форм Корзиночка-Квадрат, 10 шт.</div>
-							<div class="row__price">
-								<span class="price__old"></span>
-								<span class="price__actual">55 грн.</span>
-							</div>
-							<div class="row__btn">В корзину</div>
-							<div class="row__btn-one-click">Купить в один клик</div>
-						</div>
-						<!-- //Item -->
+							<!-- //Item -->
 
-						<!-- Item -->
-						<div class="row__item">
-							<div class="row__img">
-								<img src="img/item2.png" alt="Item 2">
-								<div class="bage__in-stock">В наличии</div>
-								<div class="bage__hit">Хит</div>
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item2.png" alt="Item 2">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Фонтан шоколадный Altezoro KZ-24/3</div>
+								<div class="row__price">
+									<span class="price__old">2300 грн.</span>
+									<span class="price__actual"> 1800 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
 							</div>
-							<div class="row__name">Фонтан шоколадный Altezoro KZ-24/3</div>
-							<div class="row__price">
-								<span class="price__old">2300 грн.</span>
-								<span class="price__actual"> 1800 грн.</span>
-							</div>
-							<div class="row__btn">В корзину</div>
-							<div class="row__btn-one-click">Купить в один клик</div>
-						</div>
-						<!-- //Item -->
+							<!-- //Item -->
 
-						<!-- Item -->
-						<div class="row__item">
-							<div class="row__img">
-								<img src="img/item3.png" alt="Item 3">
-								<div class="bage__in-stock">В наличии</div>
-								<div class="bage__hit">Хит</div>
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item3.png" alt="Item 3">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Плунжеры для мастики Листики с металлическим толкателем</div>
+								<div class="row__price">
+									<span class="price__old"></span>
+									<span class="price__actual">48 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
 							</div>
-							<div class="row__name">Плунжеры для мастики Листики с металлическим толкателем</div>
-							<div class="row__price">
-								<span class="price__old"></span>
-								<span class="price__actual">48 грн.</span>
-							</div>
-							<div class="row__btn">В корзину</div>
-							<div class="row__btn-one-click">Купить в один клик</div>
-						</div>
-						<!-- //Item -->
+							<!-- //Item -->
 
-						<!-- Item -->
-						<div class="row__item">
-							<div class="row__img">
-								<img src="img/item4.png" alt="Item 4">
-								<div class="bage__in-stock">В наличии</div>
-								<div class="bage__hit">Хит</div>
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item4.png" alt="Item 4">
+									<div class="bage__in-stock bage__in-stock_none">Нет в наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Магнитная планка-держатель для ножей</div>
+								<div class="row__price">
+									<span class="price__old">165 грн.</span>
+									<span class="price__actual">140 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
 							</div>
-							<div class="row__name">Магнитная планка-держатель для ножей</div>
-							<div class="row__price">
-								<span class="price__old">165 грн.</span>
-								<span class="price__actual">140 грн.</span>
-							</div>
-							<div class="row__btn">В корзину</div>
-							<div class="row__btn-one-click">Купить в один клик</div>
+							<!-- //Item -->
 						</div>
-						<!-- //Item -->
+						<div class="row__btn-all">Все хиты</div>
 					</div>
-					<div class="row__btn-all">Все хиты</div>
+					<div class="promo row-items js-tabContent" data-tab="2">
+						<div class="row-items__body">
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item1.png" alt="Item 1">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Набор силиконовых порционных форм Корзиночка-Квадрат, 10 шт.</div>
+								<div class="row__price">
+									<span class="price__old"></span>
+									<span class="price__actual">55 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
 
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item2.png" alt="Item 2">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Фонтан шоколадный Altezoro KZ-24/3</div>
+								<div class="row__price">
+									<span class="price__old">2300 грн.</span>
+									<span class="price__actual"> 1800 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item3.png" alt="Item 3">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Плунжеры для мастики Листики с металлическим толкателем</div>
+								<div class="row__price">
+									<span class="price__old"></span>
+									<span class="price__actual">48 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item4.png" alt="Item 4">
+									<div class="bage__in-stock bage__in-stock_none">Нет в наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Магнитная планка-держатель для ножей</div>
+								<div class="row__price">
+									<span class="price__old">165 грн.</span>
+									<span class="price__actual">140 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+						</div>
+						<div class="row__btn-all">Все акции</div>
+					</div>
+					<div class="new row-items js-tabContent" data-tab="3">
+						<div class="row-items__body">
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item1.png" alt="Item 1">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Набор силиконовых порционных форм Корзиночка-Квадрат, 10 шт.</div>
+								<div class="row__price">
+									<span class="price__old"></span>
+									<span class="price__actual">55 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item2.png" alt="Item 2">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Фонтан шоколадный Altezoro KZ-24/3</div>
+								<div class="row__price">
+									<span class="price__old">2300 грн.</span>
+									<span class="price__actual"> 1800 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item3.png" alt="Item 3">
+									<div class="bage__in-stock">В наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Плунжеры для мастики Листики с металлическим толкателем</div>
+								<div class="row__price">
+									<span class="price__old"></span>
+									<span class="price__actual">48 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+
+							<!-- Item -->
+							<div class="row__item">
+								<div class="row__img">
+									<img src="img/item4.png" alt="Item 4">
+									<div class="bage__in-stock bage__in-stock_none">Нет в наличии</div>
+									<div class="bage__hit">Хит</div>
+								</div>
+								<div class="row__name">Магнитная планка-держатель для ножей</div>
+								<div class="row__price">
+									<span class="price__old">165 грн.</span>
+									<span class="price__actual">140 грн.</span>
+								</div>
+								<div class="row__btn">В корзину</div>
+								<div class="row__btn-one-click">Купить в один клик</div>
+							</div>
+							<!-- //Item -->
+						</div>
+						<div class="row__btn-all">Все новинки</div>
+					</div>
 				</div>
 			</div>
 		</section>

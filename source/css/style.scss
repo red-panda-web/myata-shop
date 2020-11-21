@@ -422,14 +422,20 @@ body{
 }
 
 //// Deals ////
-
-.deals {
+.hits, .promo, .new{
+	display: none;
 }
+
+.hits.active, .promo.active, .new.active{
+	display: block;
+}
+
 .deals__body {
 	display: flex;
 	flex-direction: column;
-	padding: 80px 0;
+	padding: 80px 0 0 0;
 }
+
 .tabs {
 	display: flex;
 	justify-content: space-between;
@@ -444,7 +450,8 @@ body{
 		z-index: -1;
 	}
 }
-.arrow {
+
+.arrow-left, .arrow-right {
 	width: 41px;
 	height: 41px;
 	border: 2px solid #ecf0f1;
@@ -458,17 +465,18 @@ body{
 		background-image: url("../../img/icons/left_arrow_hover.png");
 	}
 }
+
 .arrow-right{
 	background: url("../../img/icons/right_arrow.png") center no-repeat, #ecf0f1;
 	&:hover{
-		background-color: #34495e;
-		border-color: #34495e;
 		background-image: url("../../img/icons/right_arrow_hover.png");
 	}
 }
+
 .tabs__body {
 	display: flex;
 }
+
 .tabs__item {
 	width: 263px;
 	position: relative;
@@ -493,13 +501,15 @@ body{
 	&:after{
 		content: "";
 		position: absolute;
-		display: none;
+		visibility: hidden;
+		opacity: 0;
 		width: 15px;
 		height: 15px;
 		background-color: #34495e;
 		transform: rotate(45deg);
 		left: 48%;
 		top: 85%;
+		transition: all 0.1s ease-in;
 	}
 }
 
@@ -510,17 +520,22 @@ body{
 }
 
 .tabs__item.active.tabs__item::after{
-	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 
 .tabs__item + .tabs__item{
 	margin-left: 20px;
 }
 
-.hits-row{	
+.row-items{	
+	position: relative;
+	padding: 80px 0;
+}
+
+.row-items__body{
 	display: flex;
 	justify-content: space-between;
-	padding: 80px 0;
 }
 
 .row__item {
@@ -580,6 +595,11 @@ body{
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: normal;
+}
+
+.bage__in-stock_none{
+	color: #e74c3c;
+	background: url("../../img/icons/cross.png") 7px 50% no-repeat, url("../../img/icons/bage_red.png") 0 0 no-repeat, #ecf0f1;
 }
 
 .row__name {
@@ -651,6 +671,7 @@ body{
 		content: "";
 		height: 1px;
 		display: block;
+		margin-top: -2px;
 		background: url("../../img/icons/btn_bb.png") 2px 0 no-repeat;
 		width: 100%;
 	}
@@ -663,4 +684,21 @@ body{
 }
 
 .row__btn-all {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: inline-block;
+	color: #95a5a6;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-bottom: 2px dashed #95a5a6;
+	&:hover{
+		color: #34495e;
+		border-color: #34495e;
+	}
 }
