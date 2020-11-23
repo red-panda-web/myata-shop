@@ -423,7 +423,7 @@ body {
   background-color: #ffffff;
 }
 
-.promo {
+.slider-promo {
   padding: 30px 29px 0 0;
   position: relative;
 }
@@ -438,12 +438,12 @@ body {
   text-transform: uppercase;
 }
 
-.promo__title {
+.slider-promo__title {
   text-align: right;
   margin-bottom: 9px;
 }
 
-.promo__description {
+.slider-promo__description {
   color: #34495e;
   font-size: 30px;
   font-weight: 300;
@@ -455,7 +455,7 @@ body {
   letter-spacing: -0.3px;
 }
 
-.promo__btn {
+.slider-promo__btn {
   display: inline-block;
   background-color: #34495e;
   padding: 15px 45px;
@@ -833,6 +833,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 70px 0 80px 0;
+  position: relative;
 }
 
 .news__title {
@@ -905,6 +906,17 @@ body {
 .news__btn a:hover {
   color: #34495e;
   border-bottom: none;
+}
+
+.btn-up {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  background: url("../../img/icons/arrow_up.png") center no-repeat, #34495e;
+  cursor: pointer;
 }
 
 .footer {
@@ -999,4 +1011,23 @@ body {
   font-style: normal;
   letter-spacing: normal;
   line-height: 22px;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .header__logo {
+    max-width: 220px;
+    padding: 20px 0 0 0;
+  }
+
+  .header__block1 {
+    width: 350px;
+  }
+
+  .menu li {
+    padding: 0 0 0 17px;
+  }
 }
