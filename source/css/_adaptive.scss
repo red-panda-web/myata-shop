@@ -15,10 +15,142 @@
 	}
 
 	//// Menu ////
-	.menu{
+	.menu-top-big{
 		li{
 			padding: 0 0 0 17px;
+			background: none;
 		}
+	}
+
+	//// under-header section ////
+	.catalog__title{
+		text-align: center;
+		padding: 16px 24px;
+	}
+
+	.catalog__menu-lvl1{
+		li{
+			a{
+				padding: 18px 10px 18px 29px;
+			}
+		}
+	}
+
+	.catalog__menu-lvl2{
+		right: -122%;
+	}
+
+	//// Our Advantages ////
+	.advantages__body{
+		padding: 55px 0 70px 0;
+	}
+	.advantages__item{
+		max-width: none;
+	}
+	    
+	//// Deals ////
+	.tabs__item{
+		width: 250px;
+	}
+
+	.row-items__body{
+		a:last-child{
+			display: none;
+		}	
+	}
+
+	//// About Us ////
+	.aboutUs__title{
+		margin-bottom: 50px;
+	}
+
+	//// News ////
+	.news__body{
+		padding: 50px 0 80px 0;
+	}
+
+	.news__title{
+		margin-bottom: 50px;
+	}
+
+	.news__item:last-child{
+		display: none;
+	}
+
+	//// Footer ////
+	.communication{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__contacts{
+		margin-right: 0;
+		margin-bottom: 15px;
 	}
 } 
 
+@media (max-width: 992px){
+	.container{
+		max-width: 750px;
+	}
+
+	//// Header ////
+	.header__logo-big{
+		display: none;
+	}
+
+	.header__logo-min{
+		display: block;
+	}
+
+	.header__block1{
+		width: 260px;
+	}
+
+	.header__contacts{
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.phone + .phone{
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.header__block2{
+		width: 235px;
+		padding-top: 7px;
+	}
+
+	//// Menu ////
+	.menu-top-big{
+		display: none;
+	}
+
+	.menu-top-small{
+		display: flex;
+		li{
+			padding: 30px 0 20px 0;
+			background: none;
+			position: relative;
+			&:first-child{
+				a:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	//// Under header section ////
+	.catalog{
+		display: none;
+	}
+	.under-header__slider{
+		height: 100%;
+		margin-left: 0;
+	}
+	.under-header__slide{
+		height: 100%;
+	} 
+}

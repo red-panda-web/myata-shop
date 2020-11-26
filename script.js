@@ -64,4 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
+	// button scroll up
+	document.querySelector(".btn-up").addEventListener("click", function () {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		});
+	})
+
 });
