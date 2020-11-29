@@ -130,7 +130,7 @@
 
 	.menu-top-small{
 		display: flex;
-		li{
+		&>li{
 			padding: 30px 0 20px 0;
 			background: none;
 			position: relative;
@@ -153,4 +153,61 @@
 	.under-header__slide{
 		height: 100%;
 	} 
+
+	//// Our advantages ////
+	.advantages__text{
+		font-size: 18px;
+	}
+	.advantages__item + .advantages__item{
+		margin-left: 15px;
+	}
+
+	//// Deals ////
+	.tabs__item{
+		width: 190px;
+	}
+
+	.row-items{
+		padding-bottom: 120px;
+	}
+
+	.row-items__body{
+		justify-content: space-evenly;
+		a:nth-child(3){
+			display: none;
+		}
+	}
+
+	.row__btn-all{
+		bottom: 40px;
+	}
+
+	//// News ////
+	.news__row{
+		justify-content: space-evenly;
+	}
+
+	.news__item:nth-child(3){
+		display: none;
+	}
+
+	.news__body{
+		padding-bottom: 120px;
+	}
+
+	.btn-all-news{
+		display: block;
+	}
+
+	//// Footer ////
+	.menu-bottom li{
+		background: none;
+		padding: 0;
+	}
+}
+
+@media (max-width: 767px){
+	.container{
+		max-width: none;
+	}
 }

@@ -180,10 +180,10 @@ body{
 	background-color: #34495e;
 }
 
-.menu{
+.menu-top-big{
 	display: flex;
 	justify-content: space-between;
-
+	padding: 25px 0 24px 0;	
 	li{
 		background: url("../../img/icons/leaves.png") 0 0 no-repeat;
 		padding: 0 0 0 30px;
@@ -201,15 +201,18 @@ body{
 	}
 }
 
-.menu-top-big{
-	padding: 25px 0 24px 0;	
-}
-
 .menu-top-small{
 	display: none;
+	justify-content: space-between;
 	& > li:first-child{
 		position: relative;
 		padding: 20px;
+		background-color: #2ecc71;	
+		a{
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
 		&::before{
 			content: "";
 			display: inline-block;
@@ -219,27 +222,52 @@ body{
 			margin-right: 7px;
 		}
 	}
-	li{
-		background-position: 0 48%;
-		&:first-child{
-			background-color: #2ecc71;		
-			a{
-				font-size: 16px;
-				font-weight: 700;
-				text-transform: uppercase;
+	& > li {
+		& > a{
+			color: #ffffff;
+			text-transform: uppercase;
+			&:hover{
+				color: #2ecc71;
 			}
 		}
 	}
 }
 
 .menu-top-small-lvl2{
+	width: 250px;
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background-color: #2ecc71;
+	background-color: #ecf0f1;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 11;
+	a{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		color: #34495e;
+		padding: 21px 10px 26px 29px;
+		font-size: 14px;
+		&:hover{
+			background-color: #34495e;
+			color: #fff;
+		}
+	}
+	li{
+		position: relative;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 5px;
+			height: 5px;
+			background-color: #2ecc71;
+			border-radius: 50%;
+			position: absolute;
+			top: 41%;
+			left: 15px;
+		}
+	}
 }
 
 .menu-top-small > li:first-child:hover .menu-top-small-lvl2{
@@ -247,6 +275,27 @@ body{
 	opacity: 1;
 }
 
+.menu-top-small-lvl3{
+	width: 250px;
+	position: absolute;
+	left: 100%;
+	top: 0%;
+	background-color: #2ecc71;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 11;
+	a{
+		color: #fff;
+	}
+	li:before{
+		background-color: #fff;
+	}
+}
+
+.menu-top-small-lvl2 > li:last-child:hover .menu-top-small-lvl3{
+	visibility: visible;
+	opacity: 1;
+}
 //// under-header section ////
 
 .under-header {
@@ -851,6 +900,26 @@ body{
 	}
 }
 
+.btn-all-news{
+	display: none;
+	position: absolute;
+	right: 65px;
+	bottom: 70px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 2px dashed #95a5a6;
+	a{
+		color: #95a5a6;
+	}
+	&:hover{
+		a{
+			color: #34495e;
+		}		
+		border-color: #34495e;
+	}
+}
+
 .btn-up{
 	position: absolute;
 	right: 0;
@@ -875,8 +944,27 @@ body{
 	padding: 46px 0 40px 0;
 }
 .menu-bottom {
+	display: flex;
+	justify-content: space-between;
+	li{
+		background: url("../../img/icons/leaves.png") 0 0 no-repeat;
+		padding: 0 0 0 30px;
+		&:first-child{
+			background: none;
+			padding: 0;
+		}	
+	}
+
 	li + li{
 		margin-left: 20px;
+	}
+	
+	a{
+		color: #ffffff;
+		text-transform: uppercase;
+		&:hover{
+			color: #2ecc71;
+		}
 	}
 }
 
