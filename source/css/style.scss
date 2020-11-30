@@ -204,56 +204,46 @@ body{
 .menu-top-small{
 	display: none;
 	justify-content: space-between;
-	& > li:first-child{
-		position: relative;
-		padding: 20px;
-		background-color: #2ecc71;	
-		a{
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-		}
-		&::before{
-			content: "";
-			display: inline-block;
-			width: 21px;
-			height: 24px;
-			background: url("../../img/icons/leaves_big.png") 0 0 no-repeat;
-			margin-right: 7px;
-		}
-	}
-	& > li {
-		& > a{
-			color: #ffffff;
-			text-transform: uppercase;
-			&:hover{
-				color: #2ecc71;
-			}
-		}
+	align-items: center;
+}
+
+.menu-catalog{
+	position: relative;
+	margin-right: 30px;
+}
+
+.menu-catalog__name{
+	display: inline-block;
+	padding: 20px;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	&::before{
+		content: "";
+		display: inline-block;
+		width: 21px;
+		height: 24px;
+		background: url("../../img/icons/leaves_big.png") 0 0 no-repeat;
+		margin-right: 7px;
 	}
 }
 
-.menu-top-small-lvl2{
-	width: 250px;
+.menu-catalog-lvl1, .menu-catalog-lvl2{
+	visibility: hidden;
+	opacity: 0;
 	position: absolute;
+	transition: all 0.3s ease-in;
+}
+
+.menu-catalog-lvl1{
 	top: 100%;
 	left: 0;
 	background-color: #ecf0f1;
-	visibility: hidden;
-	opacity: 0;
 	z-index: 11;
-	a{
-		display: inline-block;
-		width: 100%;
-		height: 100%;
-		color: #34495e;
-		padding: 21px 10px 26px 29px;
-		font-size: 14px;
-		&:hover{
-			background-color: #34495e;
-			color: #fff;
-		}
-	}
+	width: 300px;
 	li{
 		position: relative;
 		&:before{
@@ -264,37 +254,82 @@ body{
 			background-color: #2ecc71;
 			border-radius: 50%;
 			position: absolute;
-			top: 41%;
-			left: 15px;
+			top: 45%;
+			left: 10px;
+		}
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+		color: #34495e;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 20px 20px 20px 30px;
+		&:hover{
+			color: #2ecc71;
 		}
 	}
 }
 
-.menu-top-small > li:first-child:hover .menu-top-small-lvl2{
+.menu-catalog-lvl1.active, .menu-catalog:hover .menu-catalog-lvl1{
 	visibility: visible;
 	opacity: 1;
 }
 
-.menu-top-small-lvl3{
-	width: 250px;
-	position: absolute;
+.menu-catalog-lvl2{
+	top: 0;
 	left: 100%;
-	top: 0%;
 	background-color: #2ecc71;
-	visibility: hidden;
-	opacity: 0;
 	z-index: 11;
-	a{
-		color: #fff;
-	}
+	width: 300px;
 	li:before{
 		background-color: #fff;
 	}
+	a{
+		color: #fff;
+		&:hover{
+			background-color: #27ae60;
+			color: #fff;
+		}
+	}
 }
 
-.menu-top-small-lvl2 > li:last-child:hover .menu-top-small-lvl3{
+.menu-catalog-lvl1 li:last-child:hover .menu-catalog-lvl2{
 	visibility: visible;
 	opacity: 1;
+}
+
+.menu-top-small-main{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	li{
+		padding: 30px 0 20px 0;
+		background: none;
+	}
+	a{
+		color: #ffffff;
+		text-transform: uppercase;
+		&:hover{
+			color: #2ecc71;
+		}
+	}
+}
+
+.menu-burger{
+	display: none;
+	width: 30px;
+	height: 25px;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	span{
+		display: inline-block;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+	}
 }
 //// under-header section ////
 

@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+	//slider 
 	new Swiper('.under-header__slider', {
 		direction: 'horizontal',
 		loop: true,
@@ -72,4 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	})
 
+	// catalog button
+	document.querySelector(".menu-catalog").addEventListener("click", function () {
+		if (document.body.clientWidth < 767) {
+			document.querySelector(".menu-catalog-lvl1").classList.toggle("active");
+		}
+	})
 });
