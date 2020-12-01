@@ -7,9 +7,7 @@ body{
 	letter-spacing: normal;
 	line-height: normal;
 }
-
-//// header ////
-
+/* ------------------------------Header------------------------------ */
 .container {
 	max-width: 1170px;
 	height: 100%;
@@ -66,7 +64,7 @@ body{
 	margin-left: 28px;
 }
 
-.header__search {
+.header__search, .header__search_second {
 	form{
 		width: 100%;
 		position: relative;
@@ -99,6 +97,10 @@ body{
 		&:-moz-placeholder           {color: #bdc3c7;}
 		&:-ms-input-placeholder      {color: #bdc3c7;}
 	}
+}
+
+.header__search_second{
+	display: none;
 }
 
 .header__block2 {
@@ -141,6 +143,7 @@ body{
 .header__cart {
 	display: flex;
 	justify-content: space-around;
+	position: relative;
 	background-color: #ecf0f1;
 	border-radius: 4px;
 	padding: 11px 0;
@@ -175,7 +178,25 @@ body{
 	margin-top: 7px;
 }
 
-//// Menu ////
+.header__cart-bage{
+	display: none;
+	position: absolute;
+	top: -5px;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: red;
+	span{
+		color: #fff;
+	}
+}
+/* ------------------------------------------------------------------ */
+
+
+/* ------------------------------Menu-------------------------------- */
 .nav-top{
 	background-color: #34495e;
 }
@@ -331,8 +352,11 @@ body{
 		background-color: #fff;
 	}
 }
-//// under-header section ////
 
+/* ------------------------------------------------------------------ */
+
+
+/* ---------------------Under-header section ------------------------ */
 .under-header {
 	height: 561px;
 	background: url("../../img/bg_green.png") 0 0 no-repeat, url("../../img/first_sec_bg.png") 0 0/cover no-repeat;
@@ -515,9 +539,10 @@ body{
 	right: 29px;
 	margin-top: 38px;
 }
+/* ------------------------------------------------------------------ */
 
-//// Our Advantages ////
 
+/* -------------------------Our Advantages--------------------------- */
 .advantages {
 	background-color: #ecf0f1;
 }
@@ -556,8 +581,10 @@ body{
 	line-height: 26px;
 	text-align: center;
 }
+/* ------------------------------------------------------------------ */
 
-//// Deals ////
+
+/* ------------------------------Deals------------------------------- */
 .hits, .promo, .new{
 	display: none;
 }
@@ -720,7 +747,7 @@ body{
 	bottom: -1px;
 	left: 0;
 	border-radius: 10px 10px 10px 0;
-	padding: 6px 10px 8px 37px;
+	padding: 6px 10px 4px 37px;
 	background: url("../../img/icons/gal.png") 5px 50% no-repeat,
 					url("../../img/icons/bage_green.png") 0 0 no-repeat,#ecf0f1;
 	color: #1abc9c;
@@ -776,7 +803,6 @@ body{
 	transition: all 0.1s ease-in;
 	&:hover{
 		background-color: #34495e;
-
 	}
 }
 
@@ -821,8 +847,96 @@ body{
 	}
 }
 
-//// About Us ////
+.deals__body_min{
+	display: none;
+	flex-direction: column;
+	padding: 50px 0;
+}
 
+.spoiler{
+	display: flex;
+	flex-direction: column;
+}
+
+.spoiler__name{
+	position: relative;
+	border: 2px solid #ecf0f1;
+	background-color: #ecf0f1;
+	color: #34495e;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 19px 0;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+	&:hover{
+		background-color: #34495e;
+		border-color: #34495e;
+		color: #fff;
+	}
+}
+
+.spoiler__name.active{
+	background-color: #34495e;
+	border-color: #34495e;
+	color: #fff;
+	&:after{
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		background-color: #34495e;
+		transform: rotate(45deg);
+		left: 49%;
+		top: 85%;
+		transition: all 0.1s ease-in;
+	}
+}
+
+.spoiler__body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.6s ease-in;
+}
+
+.spoiler__body.active{
+	height: 1000px;
+	margin: 30px 0 0 0;
+}
+
+.spoiler__items{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	a{
+		margin-bottom: 30px;
+	}
+}
+
+.spoiler__btn-all{
+	display: inline-block;
+	color: #95a5a6;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-bottom: 2px dashed #95a5a6;
+	&:hover{
+		color: #34495e;
+		border-color: #34495e;
+	}
+}
+
+/* ------------------------------------------------------------------ */
+
+
+/* ---------------------------About Us------------------------------- */
 .aboutUs {
 	background: url("../../img/bg_green.png") 0 0, url("../../img/about_bg_img.png") 0 0/cover no-repeat;
 }
@@ -859,8 +973,10 @@ body{
 		margin-top: 21px;
 	}
 }
+/* ------------------------------------------------------------------ */
 
-//// News ////
+
+/* ----------------------------News---------------------------------- */
 .news__body {
 	display: flex;
 	flex-direction: column;
@@ -965,9 +1081,10 @@ body{
 	background: url("../../img/icons/arrow_up.png") center no-repeat, #34495e;
 	cursor: pointer;
 }
+/* ------------------------------------------------------------------ */
 
-//// Footer ////
 
+/* -----------------------------Footer------------------------------- */
 .footer {
 	background-color: #34495e;
 }
@@ -978,6 +1095,7 @@ body{
 	justify-content: space-between;
 	padding: 46px 0 40px 0;
 }
+
 .menu-bottom {
 	display: flex;
 	justify-content: space-between;
@@ -1076,5 +1194,6 @@ body{
 	font-weight: 400;
 	line-height: 22px;
 }
+/* ------------------------------------------------------------------ */
 
 @import "_adaptive.scss";

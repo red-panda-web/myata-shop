@@ -144,6 +144,11 @@
 		height: 100%;
 	} 
 
+	.under-header__slider .swiper-pagination-bullet{
+		width: 14px;
+		height: 14px;
+	}
+
 	//// Our advantages ////
 	.advantages__text{
 		font-size: 18px;
@@ -202,11 +207,107 @@
 	}
 }
 
-@media (max-width: 730px){
+@media (max-width: 740px){
+
+	//// Header ////
+	
+	.header__body{
+		justify-content: space-between;
+		padding-top: 28px;
+	}
+
+	.header__logo{
+		padding: 0;
+	}
+
+	.header__block1{
+		display: none;
+	}
+
+	.header__search_second{
+		display: block;
+		width: 100%;
+	}
+
+	.header__block2{
+		display: grid;
+		width: 80%;
+		grid-template-columns: minmax(150px, 1fr) 100px;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		padding: 0;
+	}
+
+	.header__authorization{
+		margin: 0;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.header__search_second{
+		width: 75%;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	.header__cart{
+		grid-column: 2/3;
+		grid-row: 1/3;
+		justify-self: end;
+		background: transparent;
+		padding: 0;
+	}
+
+	.header__cart-img{
+		width: 75px;
+		height: 75px;
+		margin: 0;
+	}
+
+	.header__cart-info{
+		display: none;
+	}
+
+	.header__cart-bage{
+		display: flex;
+	}
+
+	//// Menu ////
 	.menu-burger{
 		display: flex;
 	}
+
 	.menu-top-small-main{
 		display: none;
+	}
+
+	//// Our adventages////
+
+	.advantages__body{
+		padding: 55px 0;
+	}
+	.advantages__row{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.advantages__item{
+		width: 245px;
+		margin-bottom: 25px;
+	}
+
+	.advantages__item + .advantages__item{
+		margin-left: 0;
+	}
+
+	//// Deals ////
+
+	.deals__body{
+		display: none;
+	}
+
+	.deals__body_min{
+		display: flex;
 	}
 }

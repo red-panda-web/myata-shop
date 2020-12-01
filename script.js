@@ -22,20 +22,35 @@ document.addEventListener("DOMContentLoaded", function () {
 	//tabs
 
 	function change_tab(id) {
+		if (document.body.clientWidth < 767) clearOldActiveTabs();
+
 		let tab_trigger = document.querySelector('.js-trigger[data-tab="' + id + '"]');
 		let tab_content = document.querySelector('.js-tabContent[data-tab="' + id + '"]');
 
 		let active_tab = document.querySelector(".js-trigger.active");
-		active_tab.classList.remove("active");
-
 		let active_content = document.querySelector(".js-tabContent.active");
-		active_content.classList.remove("active");
 
-		tab_trigger.classList.add("active");
-		tab_content.classList.add("active");
+		if (tab_trigger === active_tab && document.body.clientWidth < 767) {
+			active_tab.classList.remove("active");
+			active_content.classList.remove("active");
+		}
+		else {
+			if (active_tab != null) active_tab.classList.remove("active");
+			if (active_content != null) active_content.classList.remove("active");
+
+			tab_trigger.classList.add("active");
+			tab_content.classList.add("active");
+		}
 	}
 
 	let tabs_triggers = document.querySelectorAll(".js-trigger");
+
+	function clearOldActiveTabs() {
+		let oldActiveTrigger = document.querySelector(".tabs__item.active");
+		if (oldActiveTrigger != null) oldActiveTrigger.classList.remove("active");
+		let oldActiveContent = document.querySelector(".row-items.active");
+		if (oldActiveTrigger != null) oldActiveContent.classList.remove("active");
+	}
 
 	tabs_triggers.forEach((item) => {
 		item.addEventListener("click", function () {
@@ -79,4 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.querySelector(".menu-catalog-lvl1").classList.toggle("active");
 		}
 	})
+
+	window.addEventListener("resize", function () {
+		let active_tab = document.querySelector(".js-trigger.active");
+
+		if (active_tab == null && document.body.clientWidth > 730) change_tab(1);
+
+		if (active_tab == null && document.body.clientWidth < 730) change_tab(4);
+
+	}, false)
 });
+
