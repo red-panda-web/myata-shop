@@ -310,4 +310,27 @@
 	.deals__body_min{
 		display: flex;
 	}
+
+	//// About Us ////
+
+	.aboutUs__body{
+		padding: 60px 0;
+	}
+
+	//// Deals ////
+
+	.footer__row{
+		flex-direction: column;
+		nav{
+			margin-bottom: 30px;
+		}
+	}
+
+	.communication{
+		flex-direction: row;
+	}
+
+	.footer__social{
+		margin-left: 50px;
+	}
 }

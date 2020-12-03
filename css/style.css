@@ -128,7 +128,7 @@ body {
 
 .phone {
   display: inline-block;
-  background: url("../../img/icons/phone.png") 0 50% no-repeat;
+  background: url("../img/icons/phone.png") 0 50% no-repeat;
   padding: 0 0 0 20px;
 }
 .phone a {
@@ -160,10 +160,10 @@ body {
   position: absolute;
   right: 20px;
   bottom: 12px;
-  background: url("../../img/icons/magnifying_glass_unactive.png") 0 0 no-repeat;
+  background: url("../img/icons/magnifying_glass_unactive.png") 0 0 no-repeat;
 }
 .header__search button:hover, .header__search_second button:hover {
-  background: url("../../img/icons/magnifying_glass_active.png") 0 0 no-repeat;
+  background: url("../img/icons/magnifying_glass_active.png") 0 0 no-repeat;
 }
 .header__search input, .header__search_second input {
   width: 100%;
@@ -208,22 +208,22 @@ body {
 }
 
 .logIn {
-  background: url("../../img/icons/key.png") 10px 0 no-repeat;
+  background: url("../img/icons/key.png") 10px 0 no-repeat;
   border-right: 1px solid #ecf0f1;
   padding: 0 9px 0 30px;
 }
 .logIn:hover {
   color: #34495e;
-  background: url("../../img/icons/key_hover.png") 10px 0 no-repeat;
+  background: url("../img/icons/key_hover.png") 10px 0 no-repeat;
 }
 
 .reg {
-  background: url("../../img/icons/lock.png") 10px 0 no-repeat;
+  background: url("../img/icons/lock.png") 10px 0 no-repeat;
   padding: 0 9px 0 25px;
 }
 .reg:hover {
   color: #34495e;
-  background: url("../../img/icons/lock_hover.png") 10px 0 no-repeat;
+  background: url("../img/icons/lock_hover.png") 10px 0 no-repeat;
 }
 
 .header__cart {
@@ -292,7 +292,7 @@ body {
   padding: 25px 0 24px 0;
 }
 .menu-top-big li {
-  background: url("../../img/icons/leaves.png") 0 0 no-repeat;
+  background: url("../img/icons/leaves.png") 0 0 no-repeat;
   padding: 0 0 0 30px;
 }
 .menu-top-big li:first-child {
@@ -333,7 +333,7 @@ body {
   display: inline-block;
   width: 21px;
   height: 24px;
-  background: url("../../img/icons/leaves_big.png") 0 0 no-repeat;
+  background: url("../img/icons/leaves_big.png") 0 0 no-repeat;
   margin-right: 7px;
 }
 
@@ -442,7 +442,7 @@ body {
 /* ---------------------Under-header section ------------------------ */
 .under-header {
   height: 561px;
-  background: url("../../img/bg_green.png") 0 0 no-repeat, url("../../img/first_sec_bg.png") 0 0/cover no-repeat;
+  background: url("../img/bg_green.png") 0 0 no-repeat, url("../img/first_sec_bg.png") 0 0/cover no-repeat;
 }
 
 .under-header__body {
@@ -469,7 +469,7 @@ body {
   display: inline-block;
   width: 21px;
   height: 24px;
-  background: url("../../img/icons/leaves_big.png") 0 0 no-repeat;
+  background: url("../img/icons/leaves_big.png") 0 0 no-repeat;
   margin-right: 7px;
 }
 
@@ -561,7 +561,7 @@ body {
 
 .under-header__slide {
   width: 100%;
-  background: url("../../img/cakes.png") 0 0 no-repeat;
+  background: url("../img/cakes.png") 0 0 no-repeat;
 }
 
 .under-header__pagination {
@@ -700,19 +700,19 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  background: url("../../img/icons/left_arrow.png") center no-repeat, #ecf0f1;
+  background: url("../img/icons/left_arrow.png") center no-repeat, #ecf0f1;
 }
 .arrow-left:hover, .arrow-right:hover {
   background-color: #34495e;
   border-color: #34495e;
-  background-image: url("../../img/icons/left_arrow_hover.png");
+  background-image: url("../img/icons/left_arrow_hover.png");
 }
 
 .arrow-right {
-  background: url("../../img/icons/right_arrow.png") center no-repeat, #ecf0f1;
+  background: url("../img/icons/right_arrow.png") center no-repeat, #ecf0f1;
 }
 .arrow-right:hover {
-  background-image: url("../../img/icons/right_arrow_hover.png");
+  background-image: url("../img/icons/right_arrow_hover.png");
 }
 
 .tabs__body {
@@ -827,7 +827,7 @@ body {
   left: 0;
   border-radius: 10px 10px 10px 0;
   padding: 6px 10px 4px 37px;
-  background: url("../../img/icons/gal.png") 5px 50% no-repeat, url("../../img/icons/bage_green.png") 0 0 no-repeat, #ecf0f1;
+  background: url("../img/icons/gal.png") 5px 50% no-repeat, url("../img/icons/bage_green.png") 0 0 no-repeat, #ecf0f1;
   color: #1abc9c;
   font-size: 16px;
   font-weight: 400;
@@ -835,7 +835,7 @@ body {
 
 .bage__in-stock_none {
   color: #e74c3c;
-  background: url("../../img/icons/cross.png") 7px 50% no-repeat, url("../../img/icons/bage_red.png") 0 0 no-repeat, #ecf0f1;
+  background: url("../img/icons/cross.png") 7px 50% no-repeat, url("../img/icons/bage_red.png") 0 0 no-repeat, #ecf0f1;
 }
 
 .row__name {
@@ -898,14 +898,14 @@ body {
   height: 1px;
   display: block;
   margin-top: -2px;
-  background: url("../../img/icons/btn_bb.png") 2px 0 no-repeat;
+  background: url("../img/icons/btn_bb.png") 2px 0 no-repeat;
   width: 100%;
 }
 .row__btn-one-click:hover {
   color: #2ecc71;
 }
 .row__btn-one-click:hover::after {
-  background: url("../../img/icons/btn_bb_green.png") 2px 0 no-repeat;
+  background: url("../img/icons/btn_bb_green.png") 2px 0 no-repeat;
 }
 
 .row__btn-all {
@@ -1014,7 +1014,7 @@ body {
 /* ------------------------------------------------------------------ */
 /* ---------------------------About Us------------------------------- */
 .aboutUs {
-  background: url("../../img/bg_green.png") 0 0, url("../../img/about_bg_img.png") 0 0/cover no-repeat;
+  background: url("../img/bg_green.png") 0 0, url("../img/about_bg_img.png") 0 0/cover no-repeat;
 }
 
 .aboutUs__body {
@@ -1094,7 +1094,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  background: url("../../img/icons/Calendar.png") 0 2px no-repeat;
+  background: url("../img/icons/Calendar.png") 0 2px no-repeat;
   padding: 0 0 0 25px;
 }
 
@@ -1151,7 +1151,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 3px;
-  background: url("../../img/icons/arrow_up.png") center no-repeat, #34495e;
+  background: url("../img/icons/arrow_up.png") center no-repeat, #34495e;
   cursor: pointer;
 }
 
@@ -1173,7 +1173,7 @@ body {
   justify-content: space-between;
 }
 .menu-bottom li {
-  background: url("../../img/icons/leaves.png") 0 0 no-repeat;
+  background: url("../img/icons/leaves.png") 0 0 no-repeat;
   padding: 0 0 0 30px;
 }
 .menu-bottom li:first-child {
@@ -1216,7 +1216,7 @@ body {
 
 .email {
   padding: 0 0 0 20px;
-  background: url("../../img/icons/mail.png") 0 50% no-repeat;
+  background: url("../img/icons/mail.png") 0 50% no-repeat;
 }
 .email a {
   color: #ffffff;
@@ -1547,5 +1547,24 @@ body {
 
   .deals__body_min {
     display: flex;
+  }
+
+  .aboutUs__body {
+    padding: 60px 0;
+  }
+
+  .footer__row {
+    flex-direction: column;
+  }
+  .footer__row nav {
+    margin-bottom: 30px;
+  }
+
+  .communication {
+    flex-direction: row;
+  }
+
+  .footer__social {
+    margin-left: 50px;
   }
 }
