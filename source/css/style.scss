@@ -265,8 +265,18 @@ body{
 	background-color: #ecf0f1;
 	z-index: 11;
 	width: 300px;
-	li{
+	a{
+		display: inline-block;
 		position: relative;
+		width: 100%;
+		color: #34495e;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 20px 20px 20px 30px;
+		&:hover{
+			color: #2ecc71;
+		}
 		&:before{
 			content: "";
 			display: inline-block;
@@ -279,24 +289,9 @@ body{
 			left: 10px;
 		}
 	}
-	a{
-		display: inline-block;
-		width: 100%;
-		color: #34495e;
-		font-size: 16px;
-		font-weight: 700;
-		text-transform: uppercase;
-		padding: 20px 20px 20px 30px;
-		&:hover{
-			color: #2ecc71;
-		}
-	}
 }
 
-.menu-catalog-lvl1.active, .menu-catalog:hover .menu-catalog-lvl1{
-	visibility: visible;
-	opacity: 1;
-}
+
 
 .menu-catalog-lvl2{
 	top: 0;
@@ -304,8 +299,8 @@ body{
 	background-color: #2ecc71;
 	z-index: 11;
 	width: 300px;
-	li:before{
-		background-color: #fff;
+	li:first-child{
+		display: none;
 	}
 	a{
 		color: #fff;
@@ -313,12 +308,10 @@ body{
 			background-color: #27ae60;
 			color: #fff;
 		}
+		&:before{
+			background-color: #fff;
+		}
 	}
-}
-
-.menu-catalog-lvl1 li:last-child:hover .menu-catalog-lvl2{
-	visibility: visible;
-	opacity: 1;
 }
 
 .menu-top-small-main{
@@ -338,7 +331,7 @@ body{
 	}
 }
 
-.menu-burger{
+.burger-icon{
 	display: none;
 	width: 30px;
 	height: 25px;
@@ -353,6 +346,72 @@ body{
 	}
 }
 
+.burger-body{
+	display: block;
+	width: 100%;
+	height: 100vh;
+	z-index: 12;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #020f1369;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease;
+}
+
+.burger-body.active{
+	opacity: 1;
+	visibility: visible;
+	
+}
+
+.burger-menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #ecf0f1;
+	width: 50%;
+	height: 100vh;
+	ul{
+		background-color: #ecf0f1;
+		a{
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			color: #34495e;
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			padding: 20px 20px 20px 30px;
+			&:hover{
+				color: #2ecc71;
+			}
+			&:before{
+				content: "";
+				display: inline-block;
+				width: 5px;
+				height: 5px;
+				background-color: #2ecc71;
+				border-radius: 50%;
+				position: absolute;
+				top: 45%;
+				left: 10px;
+			}
+		}
+	}
+}
+
+.close-burger{
+	font-size: 40px;
+	position: relative;
+	right: -80%;
+	top: 10px;
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 0 10px;
+	cursor: pointer;
+}
 /* ------------------------------------------------------------------ */
 
 

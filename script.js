@@ -89,11 +89,44 @@ document.addEventListener("DOMContentLoaded", function () {
 	})
 
 	// catalog button
-	document.querySelector(".menu-catalog").addEventListener("click", function () {
+	document.querySelector(".menu-catalog__name").addEventListener("click", function () {
 		if (document.body.clientWidth < 767) {
 			document.querySelector(".menu-catalog-lvl1").classList.toggle("active");
 		}
 	})
+
+	//Второй уровень меню пункта "Фототорт"
+	document.querySelector(".photocake__menu").addEventListener("click", function () {
+		if (document.body.clientWidth < 767) {
+			document.querySelector(".menu-catalog-lvl2").classList.toggle("active");
+		}
+	})
+
+	//Кнопка "назад" на втором уровне меню
+	document.querySelector(".menu-back-btn").addEventListener("click", function () {
+		if (document.body.clientWidth < 767) {
+			document.querySelector(".menu-catalog-lvl2").classList.remove("active");
+		}
+	})
+
+	// Кнопка открытия меню-бургера
+	document.querySelector(".burger-icon").addEventListener("click", function () {
+		document.querySelector(".burger-body").classList.add("active");
+		document.body.style.position = 'fixed';
+	})
+
+	// Кнопка закрытия меню-бургера
+	document.querySelector(".close-burger").addEventListener("click", function () {
+		document.querySelector(".burger-body").classList.remove("active");
+		document.body.style.position = '';
+	})
+
+	//  Закрытие бургера по клику вне его
+	document.querySelector(".burger-body").addEventListener("click", function () {
+		document.querySelector(".burger-body").classList.remove("active");
+		document.body.style.position = '';
+	})
+
 
 	window.addEventListener("resize", function () {
 		let active_tab = document.querySelector(".js-trigger.active");
