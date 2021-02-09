@@ -122,10 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	})
 
 	//  Закрытие бургера по клику вне его
-	document.querySelector(".burger-body").addEventListener("click", function () {
+	/*document.querySelector(".burger-body").addEventListener("click", function () {
 		document.querySelector(".burger-body").classList.remove("active");
 		document.body.style.position = '';
-	})
+	})*/
 
 
 	window.addEventListener("resize", function () {

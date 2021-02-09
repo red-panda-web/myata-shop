@@ -368,3 +368,79 @@
 		}
 	}
 }
+
+@media (max-width: 550px){
+	.burger-menu {
+		width: 75%;
+	}
+	.advantages__title{
+		text-align: center;
+		margin-bottom: 32px;
+	}
+
+	.aboutUs__textAndImg img{
+		display: none;
+	}
+
+	.news__item{
+		max-width: 190px;
+	}
+
+	.btn-all-news {
+		right: 31px;
+	}
+}
+
+@media (max-width: 500px){
+	// скрытие кнопок авторизации и поля поиска в шапке, изменение логотипа на полный для заполнения места, срытие меню в футере
+	.header__authorization, .header__search_second, .header__logo-min, .footer__row nav{
+		display: none;
+	}
+	// отображение кнопок авторизации и поля поиска в бургере, отображение большого лого
+	.header__logo-big, .burger-body .header__search_second, .burger-menu ul li:nth-child(1), .burger-menu ul li:nth-child(2){
+		display: block;
+	}
+
+	.under-header{
+		height: 440px;
+	}
+
+	.title{
+		font-size: 35px;
+		line-height: 33px;
+	}
+	.aboutUs__title{
+		margin-bottom: 25px;
+	}
+
+	.slider-promo__description {
+		line-height: 30px;
+	}
+
+	.news__row{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.news__item{
+		min-width: 263px;
+	}
+
+	.news__item + .news__item{
+		margin-top: 20px;
+	}
+
+	.communication{
+		flex-direction: column;
+	}
+
+	.footer__social{
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 400px){
+	.burger-menu{
+		width: 100%;
+	}
+}

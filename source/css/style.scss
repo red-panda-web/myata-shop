@@ -360,6 +360,12 @@ body{
 	transition: all 0.5s ease;
 }
 
+.burger-body .header__search_second{
+	display: none;
+	border: 1px solid #34495e;
+	margin-left: 10px;
+}
+
 .burger-body.active{
 	opacity: 1;
 	visibility: visible;
@@ -375,6 +381,9 @@ body{
 	height: 100vh;
 	ul{
 		background-color: #ecf0f1;
+		li:nth-child(1), li:nth-child(2){
+			display: none;
+		}
 		a{
 			display: inline-block;
 			position: relative;
@@ -965,7 +974,7 @@ body{
 }
 
 .spoiler__body.active{
-	height: 1000px;
+	height: 1950px;
 	margin: 30px 0 0 0;
 }
 
