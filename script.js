@@ -121,11 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.body.style.position = '';
 	})
 
-	//  Закрытие бургера по клику вне его
-	/*document.querySelector(".burger-body").addEventListener("click", function () {
-		document.querySelector(".burger-body").classList.remove("active");
-		document.body.style.position = '';
-	})*/
+	document.querySelectorAll(".js-burger-item").forEach((item) => {
+		item.addEventListener("click", function () {
+			document.querySelector(".burger-body").classList.remove("active");
+			document.body.style.position = '';
+		})
+	})
 
 
 	window.addEventListener("resize", function () {
